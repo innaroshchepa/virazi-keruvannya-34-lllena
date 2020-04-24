@@ -1,12 +1,18 @@
 package test;
+import static domain.Exercise.Calculate;
 
-import domain.Exercise;
-
+/**
+ * test class
+ * @author admin
+ */
 public class TestResult {
-
-    public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
-    }
+  public static void main(String[] args) {
+     int number = 145236987;
+     if(Calculate(number)){
+         System.out.println("Число "+number+" є числом Армстронга");
+     }  
+     else{
+         System.out.println("Число "+number+" не є числом Армстронга");
+     }  
+}
 }
